@@ -1,0 +1,977 @@
+# JMH version: 1.37
+# VM version: JDK 21.0.12.1, OpenJDK 64-Bit Server VM, 21.0.12.1+1-LTS
+# VM invoker: C:\Users\anshs\AppData\Local\Temp\claude\C--Users-anshs-Desktop-job-hunt\e849d4a1-1e97-45bf-b567-bcd4958ce355\scratchpad\tools\jdk-21.0.12.1+1\bin\java.exe
+# VM options: -XX:+UseG1GC
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 3 iterations, 1 s each
+# Measurement: 6 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: io.github.anshsaxena.bench.AllocationBenchmarks.boxedLadderUpdate
+
+# Run progress: 0.00% complete, ETA 00:01:12
+# Fork: 1 of 1
+# Warmup Iteration   1: 19.480 ns/op
+# Warmup Iteration   2: 17.770 ns/op
+# Warmup Iteration   3: 16.012 ns/op
+Iteration   1: 23.183 ns/op
+                 gc.alloc.rate:      1850.444 MB/sec
+                 gc.alloc.rate.norm: 45.000 B/op
+                 gc.count:           5.000 counts
+                 gc.time:            6.000 ms
+
+Iteration   2: 17.277 ns/op
+                 gc.alloc.rate:      2482.680 MB/sec
+                 gc.alloc.rate.norm: 45.000 B/op
+                 gc.count:           6.000 counts
+                 gc.time:            6.000 ms
+
+Iteration   3: 15.535 ns/op
+                 gc.alloc.rate:      2761.773 MB/sec
+                 gc.alloc.rate.norm: 45.000 B/op
+                 gc.count:           7.000 counts
+                 gc.time:            6.000 ms
+
+Iteration   4: 15.831 ns/op
+                 gc.alloc.rate:      2710.269 MB/sec
+                 gc.alloc.rate.norm: 45.000 B/op
+                 gc.count:           7.000 counts
+                 gc.time:            6.000 ms
+
+Iteration   5: 16.582 ns/op
+                 gc.alloc.rate:      2587.120 MB/sec
+                 gc.alloc.rate.norm: 45.000 B/op
+                 gc.count:           7.000 counts
+                 gc.time:            7.000 ms
+
+Iteration   6: 16.578 ns/op
+                 gc.alloc.rate:      2587.837 MB/sec
+                 gc.alloc.rate.norm: 45.000 B/op
+                 gc.count:           6.000 counts
+                 gc.time:            6.000 ms
+
+
+
+Result "io.github.anshsaxena.bench.AllocationBenchmarks.boxedLadderUpdate":
+  17.498 ±(99.9%) 8.000 ns/op [Average]
+  (min, avg, max) = (15.535, 17.498, 23.183), stdev = 2.853
+  CI (99.9%): [9.498, 25.497] (assumes normal distribution)
+
+Secondary result "io.github.anshsaxena.bench.AllocationBenchmarks.boxedLadderUpdate:gc.alloc.rate":
+  2496.687 ±(99.9%) 930.214 MB/sec [Average]
+  (min, avg, max) = (1850.444, 2496.687, 2761.773), stdev = 331.723
+  CI (99.9%): [1566.474, 3426.901] (assumes normal distribution)
+
+Secondary result "io.github.anshsaxena.bench.AllocationBenchmarks.boxedLadderUpdate:gc.alloc.rate.norm":
+  45.000 ±(99.9%) 0.001 B/op [Average]
+  (min, avg, max) = (45.000, 45.000, 45.000), stdev = 0.001
+  CI (99.9%): [45.000, 45.000] (assumes normal distribution)
+
+Secondary result "io.github.anshsaxena.bench.AllocationBenchmarks.boxedLadderUpdate:gc.count":
+  38.000 ±(99.9%) 0.001 counts [Sum]
+  (min, avg, max) = (5.000, 6.333, 7.000), stdev = 0.816
+  CI (99.9%): [38.000, 38.000] (assumes normal distribution)
+
+Secondary result "io.github.anshsaxena.bench.AllocationBenchmarks.boxedLadderUpdate:gc.time":
+  37.000 ±(99.9%) 0.001 ms [Sum]
+  (min, avg, max) = (6.000, 6.167, 7.000), stdev = 0.408
+  CI (99.9%): [37.000, 37.000] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 21.0.12.1, OpenJDK 64-Bit Server VM, 21.0.12.1+1-LTS
+# VM invoker: C:\Users\anshs\AppData\Local\Temp\claude\C--Users-anshs-Desktop-job-hunt\e849d4a1-1e97-45bf-b567-bcd4958ce355\scratchpad\tools\jdk-21.0.12.1+1\bin\java.exe
+# VM options: -XX:+UseG1GC
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 3 iterations, 1 s each
+# Measurement: 6 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: io.github.anshsaxena.bench.AllocationBenchmarks.newTickPerEvent
+
+# Run progress: 12.50% complete, ETA 00:01:06
+# Fork: 1 of 1
+# Warmup Iteration   1: 5.515 ns/op
+# Warmup Iteration   2: 4.910 ns/op
+# Warmup Iteration   3: 4.917 ns/op
+Iteration   1: 4.963 ns/op
+                 gc.alloc.rate:      7683.749 MB/sec
+                 gc.alloc.rate.norm: 40.000 B/op
+                 gc.count:           13.000 counts
+                 gc.time:            11.000 ms
+
+Iteration   2: 5.089 ns/op
+                 gc.alloc.rate:      7494.716 MB/sec
+                 gc.alloc.rate.norm: 40.000 B/op
+                 gc.count:           13.000 counts
+                 gc.time:            13.000 ms
+
+Iteration   3: 4.919 ns/op
+                 gc.alloc.rate:      7750.718 MB/sec
+                 gc.alloc.rate.norm: 40.000 B/op
+                 gc.count:           13.000 counts
+                 gc.time:            12.000 ms
+
+Iteration   4: 5.285 ns/op
+                 gc.alloc.rate:      7216.876 MB/sec
+                 gc.alloc.rate.norm: 40.000 B/op
+                 gc.count:           12.000 counts
+                 gc.time:            11.000 ms
+
+Iteration   5: 5.207 ns/op
+                 gc.alloc.rate:      7323.356 MB/sec
+                 gc.alloc.rate.norm: 40.000 B/op
+                 gc.count:           12.000 counts
+                 gc.time:            11.000 ms
+
+Iteration   6: 5.871 ns/op
+                 gc.alloc.rate:      6495.209 MB/sec
+                 gc.alloc.rate.norm: 40.000 B/op
+                 gc.count:           11.000 counts
+                 gc.time:            12.000 ms
+
+
+
+Result "io.github.anshsaxena.bench.AllocationBenchmarks.newTickPerEvent":
+  5.222 ±(99.9%) 0.973 ns/op [Average]
+  (min, avg, max) = (4.919, 5.222, 5.871), stdev = 0.347
+  CI (99.9%): [4.249, 6.195] (assumes normal distribution)
+
+Secondary result "io.github.anshsaxena.bench.AllocationBenchmarks.newTickPerEvent:gc.alloc.rate":
+  7327.437 ±(99.9%) 1278.260 MB/sec [Average]
+  (min, avg, max) = (6495.209, 7327.437, 7750.718), stdev = 455.840
+  CI (99.9%): [6049.177, 8605.698] (assumes normal distribution)
+
+Secondary result "io.github.anshsaxena.bench.AllocationBenchmarks.newTickPerEvent:gc.alloc.rate.norm":
+  40.000 ±(99.9%) 0.001 B/op [Average]
+  (min, avg, max) = (40.000, 40.000, 40.000), stdev = 0.001
+  CI (99.9%): [40.000, 40.000] (assumes normal distribution)
+
+Secondary result "io.github.anshsaxena.bench.AllocationBenchmarks.newTickPerEvent:gc.count":
+  74.000 ±(99.9%) 0.001 counts [Sum]
+  (min, avg, max) = (11.000, 12.333, 13.000), stdev = 0.816
+  CI (99.9%): [74.000, 74.000] (assumes normal distribution)
+
+Secondary result "io.github.anshsaxena.bench.AllocationBenchmarks.newTickPerEvent:gc.time":
+  70.000 ±(99.9%) 0.001 ms [Sum]
+  (min, avg, max) = (11.000, 11.667, 13.000), stdev = 0.816
+  CI (99.9%): [70.000, 70.000] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 21.0.12.1, OpenJDK 64-Bit Server VM, 21.0.12.1+1-LTS
+# VM invoker: C:\Users\anshs\AppData\Local\Temp\claude\C--Users-anshs-Desktop-job-hunt\e849d4a1-1e97-45bf-b567-bcd4958ce355\scratchpad\tools\jdk-21.0.12.1+1\bin\java.exe
+# VM options: -XX:+UseG1GC
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 3 iterations, 1 s each
+# Measurement: 6 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: io.github.anshsaxena.bench.AllocationBenchmarks.primitiveLadderUpdate
+
+# Run progress: 25.00% complete, ETA 00:00:57
+# Fork: 1 of 1
+# Warmup Iteration   1: 1.351 ns/op
+# Warmup Iteration   2: 2.728 ns/op
+# Warmup Iteration   3: 1.293 ns/op
+Iteration   1: 1.313 ns/op
+                 gc.alloc.rate:      0.006 MB/sec
+                 gc.alloc.rate.norm: ≈ 10⁻⁵ B/op
+                 gc.count:           ≈ 0 counts
+
+Iteration   2: 1.276 ns/op
+                 gc.alloc.rate:      0.007 MB/sec
+                 gc.alloc.rate.norm: ≈ 10⁻⁵ B/op
+                 gc.count:           ≈ 0 counts
+
+Iteration   3: 1.293 ns/op
+                 gc.alloc.rate:      0.006 MB/sec
+                 gc.alloc.rate.norm: ≈ 10⁻⁵ B/op
+                 gc.count:           ≈ 0 counts
+
+Iteration   4: 1.330 ns/op
+                 gc.alloc.rate:      0.007 MB/sec
+                 gc.alloc.rate.norm: ≈ 10⁻⁵ B/op
+                 gc.count:           ≈ 0 counts
+
+Iteration   5: 1.846 ns/op
+                 gc.alloc.rate:      0.006 MB/sec
+                 gc.alloc.rate.norm: ≈ 10⁻⁵ B/op
+                 gc.count:           ≈ 0 counts
+
+Iteration   6: 1.696 ns/op
+                 gc.alloc.rate:      0.006 MB/sec
+                 gc.alloc.rate.norm: ≈ 10⁻⁵ B/op
+                 gc.count:           ≈ 0 counts
+
+
+
+Result "io.github.anshsaxena.bench.AllocationBenchmarks.primitiveLadderUpdate":
+  1.459 ±(99.9%) 0.692 ns/op [Average]
+  (min, avg, max) = (1.276, 1.459, 1.846), stdev = 0.247
+  CI (99.9%): [0.767, 2.151] (assumes normal distribution)
+
+Secondary result "io.github.anshsaxena.bench.AllocationBenchmarks.primitiveLadderUpdate:gc.alloc.rate":
+  0.007 ±(99.9%) 0.001 MB/sec [Average]
+  (min, avg, max) = (0.006, 0.007, 0.007), stdev = 0.001
+  CI (99.9%): [0.006, 0.007] (assumes normal distribution)
+
+Secondary result "io.github.anshsaxena.bench.AllocationBenchmarks.primitiveLadderUpdate:gc.alloc.rate.norm":
+  ≈ 10⁻⁵ B/op
+
+Secondary result "io.github.anshsaxena.bench.AllocationBenchmarks.primitiveLadderUpdate:gc.count":
+  ≈ 0 counts
+
+
+# JMH version: 1.37
+# VM version: JDK 21.0.12.1, OpenJDK 64-Bit Server VM, 21.0.12.1+1-LTS
+# VM invoker: C:\Users\anshs\AppData\Local\Temp\claude\C--Users-anshs-Desktop-job-hunt\e849d4a1-1e97-45bf-b567-bcd4958ce355\scratchpad\tools\jdk-21.0.12.1+1\bin\java.exe
+# VM options: -XX:+UseG1GC
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 3 iterations, 1 s each
+# Measurement: 6 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: io.github.anshsaxena.bench.AllocationBenchmarks.reusedTick
+
+# Run progress: 37.50% complete, ETA 00:00:48
+# Fork: 1 of 1
+# Warmup Iteration   1: 1.229 ns/op
+# Warmup Iteration   2: 1.332 ns/op
+# Warmup Iteration   3: 1.376 ns/op
+Iteration   1: 1.085 ns/op
+                 gc.alloc.rate:      0.006 MB/sec
+                 gc.alloc.rate.norm: ≈ 10⁻⁵ B/op
+                 gc.count:           ≈ 0 counts
+
+Iteration   2: 1.091 ns/op
+                 gc.alloc.rate:      0.007 MB/sec
+                 gc.alloc.rate.norm: ≈ 10⁻⁵ B/op
+                 gc.count:           ≈ 0 counts
+
+Iteration   3: 1.039 ns/op
+                 gc.alloc.rate:      0.006 MB/sec
+                 gc.alloc.rate.norm: ≈ 10⁻⁵ B/op
+                 gc.count:           ≈ 0 counts
+
+Iteration   4: 1.090 ns/op
+                 gc.alloc.rate:      0.007 MB/sec
+                 gc.alloc.rate.norm: ≈ 10⁻⁵ B/op
+                 gc.count:           ≈ 0 counts
+
+Iteration   5: 1.123 ns/op
+                 gc.alloc.rate:      0.006 MB/sec
+                 gc.alloc.rate.norm: ≈ 10⁻⁵ B/op
+                 gc.count:           ≈ 0 counts
+
+Iteration   6: 1.121 ns/op
+                 gc.alloc.rate:      0.006 MB/sec
+                 gc.alloc.rate.norm: ≈ 10⁻⁵ B/op
+                 gc.count:           ≈ 0 counts
+
+
+
+Result "io.github.anshsaxena.bench.AllocationBenchmarks.reusedTick":
+  1.091 ±(99.9%) 0.085 ns/op [Average]
+  (min, avg, max) = (1.039, 1.091, 1.123), stdev = 0.030
+  CI (99.9%): [1.006, 1.177] (assumes normal distribution)
+
+Secondary result "io.github.anshsaxena.bench.AllocationBenchmarks.reusedTick:gc.alloc.rate":
+  0.006 ±(99.9%) 0.001 MB/sec [Average]
+  (min, avg, max) = (0.006, 0.006, 0.007), stdev = 0.001
+  CI (99.9%): [0.006, 0.007] (assumes normal distribution)
+
+Secondary result "io.github.anshsaxena.bench.AllocationBenchmarks.reusedTick:gc.alloc.rate.norm":
+  ≈ 10⁻⁵ B/op
+
+Secondary result "io.github.anshsaxena.bench.AllocationBenchmarks.reusedTick:gc.count":
+  ≈ 0 counts
+
+
+# JMH version: 1.37
+# VM version: JDK 21.0.12.1, OpenJDK 64-Bit Server VM, 21.0.12.1+1-LTS
+# VM invoker: C:\Users\anshs\AppData\Local\Temp\claude\C--Users-anshs-Desktop-job-hunt\e849d4a1-1e97-45bf-b567-bcd4958ce355\scratchpad\tools\jdk-21.0.12.1+1\bin\java.exe
+# VM options: -XX:+UseG1GC
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 3 iterations, 1 s each
+# Measurement: 6 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Sampling time
+# Benchmark: io.github.anshsaxena.bench.AllocationBenchmarks.boxedLadderUpdate
+
+# Run progress: 50.00% complete, ETA 00:00:39
+# Fork: 1 of 1
+# Warmup Iteration   1: 109.756 ±(99.9%) 97.533 ns/op
+# Warmup Iteration   2: 135.344 ±(99.9%) 123.665 ns/op
+# Warmup Iteration   3: 68.395 ±(99.9%) 11.798 ns/op
+Iteration   1: 62.980 ±(99.9%) 7.433 ns/op
+                 gc.alloc.rate:      2320.936 MB/sec
+                 gc.alloc.rate.norm: 45.004 B/op
+                 gc.count:           6.000 counts
+                 gc.time:            7.000 ms
+                 p0.00:              ≈ 0 ns/op
+                 p0.50:              100.000 ns/op
+                 p0.90:              100.000 ns/op
+                 p0.95:              100.000 ns/op
+                 p0.99:              100.000 ns/op
+                 p0.999:             900.000 ns/op
+                 p0.9999:            21535.600 ns/op
+                 p1.00:              36864.000 ns/op
+
+Iteration   2: 65.082 ±(99.9%) 8.015 ns/op
+                 gc.alloc.rate:      2311.124 MB/sec
+                 gc.alloc.rate.norm: 45.004 B/op
+                 gc.count:           6.000 counts
+                 gc.time:            6.000 ms
+                 p0.00:              ≈ 0 ns/op
+                 p0.50:              100.000 ns/op
+                 p0.90:              100.000 ns/op
+                 p0.95:              100.000 ns/op
+                 p0.99:              100.000 ns/op
+                 p0.999:             861.300 ns/op
+                 p0.9999:            19485.979 ns/op
+                 p1.00:              41152.000 ns/op
+
+Iteration   3: 91.065 ±(99.9%) 16.211 ns/op
+                 gc.alloc.rate:      1504.978 MB/sec
+                 gc.alloc.rate.norm: 45.007 B/op
+                 gc.count:           4.000 counts
+                 gc.time:            4.000 ms
+                 p0.00:              ≈ 0 ns/op
+                 p0.50:              100.000 ns/op
+                 p0.90:              100.000 ns/op
+                 p0.95:              200.000 ns/op
+                 p0.99:              200.000 ns/op
+                 p0.999:             1356.800 ns/op
+                 p0.9999:            38321.971 ns/op
+                 p1.00:              121600.000 ns/op
+
+Iteration   4: 75.401 ±(99.9%) 21.049 ns/op
+                 gc.alloc.rate:      2187.862 MB/sec
+                 gc.alloc.rate.norm: 45.005 B/op
+                 gc.count:           6.000 counts
+                 gc.time:            5.000 ms
+                 p0.00:              ≈ 0 ns/op
+                 p0.50:              100.000 ns/op
+                 p0.90:              100.000 ns/op
+                 p0.95:              100.000 ns/op
+                 p0.99:              100.000 ns/op
+                 p0.999:             2557.900 ns/op
+                 p0.9999:            38145.837 ns/op
+                 p1.00:              140544.000 ns/op
+
+Iteration   5: 85.203 ±(99.9%) 17.213 ns/op
+                 gc.alloc.rate:      2056.330 MB/sec
+                 gc.alloc.rate.norm: 45.005 B/op
+                 gc.count:           5.000 counts
+                 gc.time:            6.000 ms
+                 p0.00:              ≈ 0 ns/op
+                 p0.50:              100.000 ns/op
+                 p0.90:              100.000 ns/op
+                 p0.95:              100.000 ns/op
+                 p0.99:              200.000 ns/op
+                 p0.999:             3644.500 ns/op
+                 p0.9999:            41741.088 ns/op
+                 p1.00:              81536.000 ns/op
+
+Iteration   6: 69.524 ±(99.9%) 11.363 ns/op
+                 gc.alloc.rate:      2090.475 MB/sec
+                 gc.alloc.rate.norm: 45.004 B/op
+                 gc.count:           6.000 counts
+                 gc.time:            5.000 ms
+                 p0.00:              ≈ 0 ns/op
+                 p0.50:              100.000 ns/op
+                 p0.90:              100.000 ns/op
+                 p0.95:              100.000 ns/op
+                 p0.99:              100.000 ns/op
+                 p0.999:             912.200 ns/op
+                 p0.9999:            17831.738 ns/op
+                 p1.00:              71680.000 ns/op
+
+
+
+Result "io.github.anshsaxena.bench.AllocationBenchmarks.boxedLadderUpdate":
+  N = 160104
+  mean =     75.567 ±(99.9%) 5.974 ns/op
+
+  Histogram, ns/op:
+    [     0.000,  12500.000) = 160061 
+    [ 12500.000,  25000.000) = 24 
+    [ 25000.000,  37500.000) = 8 
+    [ 37500.000,  50000.000) = 6 
+    [ 50000.000,  62500.000) = 0 
+    [ 62500.000,  75000.000) = 1 
+    [ 75000.000,  87500.000) = 1 
+    [ 87500.000, 100000.000) = 1 
+    [100000.000, 112500.000) = 0 
+    [112500.000, 125000.000) = 1 
+    [125000.000, 137500.000) = 0 
+    [137500.000, 150000.000) = 1 
+    [150000.000, 162500.000) = 0 
+    [162500.000, 175000.000) = 0 
+    [175000.000, 187500.000) = 0 
+
+  Percentiles, ns/op:
+      p(0.0000) =        ≈ 0 ns/op
+     p(50.0000) =    100.000 ns/op
+     p(90.0000) =    100.000 ns/op
+     p(95.0000) =    100.000 ns/op
+     p(99.0000) =    200.000 ns/op
+     p(99.9000) =   1400.000 ns/op
+     p(99.9900) =  29280.000 ns/op
+     p(99.9990) = 129157.709 ns/op
+     p(99.9999) = 140544.000 ns/op
+    p(100.0000) = 140544.000 ns/op
+
+Secondary result "io.github.anshsaxena.bench.AllocationBenchmarks.boxedLadderUpdate:gc.alloc.rate":
+  2078.617 ±(99.9%) 845.370 MB/sec [Average]
+  (min, avg, max) = (1504.978, 2078.617, 2320.936), stdev = 301.467
+  CI (99.9%): [1233.248, 2923.987] (assumes normal distribution)
+
+Secondary result "io.github.anshsaxena.bench.AllocationBenchmarks.boxedLadderUpdate:gc.alloc.rate.norm":
+  45.005 ±(99.9%) 0.003 B/op [Average]
+  (min, avg, max) = (45.004, 45.005, 45.007), stdev = 0.001
+  CI (99.9%): [45.002, 45.008] (assumes normal distribution)
+
+Secondary result "io.github.anshsaxena.bench.AllocationBenchmarks.boxedLadderUpdate:gc.count":
+  33.000 ±(99.9%) 0.001 counts [Sum]
+  (min, avg, max) = (4.000, 5.500, 6.000), stdev = 0.837
+  CI (99.9%): [33.000, 33.000] (assumes normal distribution)
+
+Secondary result "io.github.anshsaxena.bench.AllocationBenchmarks.boxedLadderUpdate:gc.time":
+  33.000 ±(99.9%) 0.001 ms [Sum]
+  (min, avg, max) = (4.000, 5.500, 7.000), stdev = 1.049
+  CI (99.9%): [33.000, 33.000] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 21.0.12.1, OpenJDK 64-Bit Server VM, 21.0.12.1+1-LTS
+# VM invoker: C:\Users\anshs\AppData\Local\Temp\claude\C--Users-anshs-Desktop-job-hunt\e849d4a1-1e97-45bf-b567-bcd4958ce355\scratchpad\tools\jdk-21.0.12.1+1\bin\java.exe
+# VM options: -XX:+UseG1GC
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 3 iterations, 1 s each
+# Measurement: 6 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Sampling time
+# Benchmark: io.github.anshsaxena.bench.AllocationBenchmarks.newTickPerEvent
+
+# Run progress: 62.50% complete, ETA 00:00:29
+# Fork: 1 of 1
+# Warmup Iteration   1: 77.514 ±(99.9%) 21.976 ns/op
+# Warmup Iteration   2: 61.497 ±(99.9%) 14.568 ns/op
+# Warmup Iteration   3: 50.104 ±(99.9%) 4.432 ns/op
+Iteration   1: 59.071 ±(99.9%) 12.852 ns/op
+                 gc.alloc.rate:      4898.788 MB/sec
+                 gc.alloc.rate.norm: 40.001 B/op
+                 gc.count:           9.000 counts
+                 gc.time:            9.000 ms
+                 p0.00:              ≈ 0 ns/op
+                 p0.50:              ≈ 0 ns/op
+                 p0.90:              100.000 ns/op
+                 p0.95:              100.000 ns/op
+                 p0.99:              100.000 ns/op
+                 p0.999:             849.900 ns/op
+                 p0.9999:            45678.880 ns/op
+                 p1.00:              63680.000 ns/op
+
+Iteration   2: 47.577 ±(99.9%) 6.084 ns/op
+                 gc.alloc.rate:      5359.943 MB/sec
+                 gc.alloc.rate.norm: 40.001 B/op
+                 gc.count:           9.000 counts
+                 gc.time:            8.000 ms
+                 p0.00:              ≈ 0 ns/op
+                 p0.50:              ≈ 0 ns/op
+                 p0.90:              100.000 ns/op
+                 p0.95:              100.000 ns/op
+                 p0.99:              100.000 ns/op
+                 p0.999:             600.000 ns/op
+                 p0.9999:            13413.754 ns/op
+                 p1.00:              51776.000 ns/op
+
+Iteration   3: 47.309 ±(99.9%) 4.731 ns/op
+                 gc.alloc.rate:      5239.679 MB/sec
+                 gc.alloc.rate.norm: 40.002 B/op
+                 gc.count:           10.000 counts
+                 gc.time:            9.000 ms
+                 p0.00:              ≈ 0 ns/op
+                 p0.50:              ≈ 0 ns/op
+                 p0.90:              100.000 ns/op
+                 p0.95:              100.000 ns/op
+                 p0.99:              100.000 ns/op
+                 p0.999:             600.000 ns/op
+                 p0.9999:            10086.952 ns/op
+                 p1.00:              39296.000 ns/op
+
+Iteration   4: 52.372 ±(99.9%) 10.618 ns/op
+                 gc.alloc.rate:      5370.746 MB/sec
+                 gc.alloc.rate.norm: 40.002 B/op
+                 gc.count:           9.000 counts
+                 gc.time:            9.000 ms
+                 p0.00:              ≈ 0 ns/op
+                 p0.50:              ≈ 0 ns/op
+                 p0.90:              100.000 ns/op
+                 p0.95:              100.000 ns/op
+                 p0.99:              100.000 ns/op
+                 p0.999:             900.000 ns/op
+                 p0.9999:            21403.034 ns/op
+                 p1.00:              93696.000 ns/op
+
+Iteration   5: 57.642 ±(99.9%) 20.413 ns/op
+                 gc.alloc.rate:      5086.022 MB/sec
+                 gc.alloc.rate.norm: 40.002 B/op
+                 gc.count:           9.000 counts
+                 gc.time:            8.000 ms
+                 p0.00:              ≈ 0 ns/op
+                 p0.50:              ≈ 0 ns/op
+                 p0.90:              100.000 ns/op
+                 p0.95:              100.000 ns/op
+                 p0.99:              100.000 ns/op
+                 p0.999:             600.000 ns/op
+                 p0.9999:            27014.144 ns/op
+                 p1.00:              186880.000 ns/op
+
+Iteration   6: 48.511 ±(99.9%) 5.350 ns/op
+                 gc.alloc.rate:      5275.631 MB/sec
+                 gc.alloc.rate.norm: 40.001 B/op
+                 gc.count:           9.000 counts
+                 gc.time:            8.000 ms
+                 p0.00:              ≈ 0 ns/op
+                 p0.50:              ≈ 0 ns/op
+                 p0.90:              100.000 ns/op
+                 p0.95:              100.000 ns/op
+                 p0.99:              100.000 ns/op
+                 p0.999:             600.000 ns/op
+                 p0.9999:            17427.717 ns/op
+                 p1.00:              32000.000 ns/op
+
+
+
+Result "io.github.anshsaxena.bench.AllocationBenchmarks.newTickPerEvent":
+  N = 200679
+  mean =     51.955 ±(99.9%) 4.578 ns/op
+
+  Histogram, ns/op:
+    [     0.000,  12500.000) = 200642 
+    [ 12500.000,  25000.000) = 20 
+    [ 25000.000,  37500.000) = 8 
+    [ 37500.000,  50000.000) = 4 
+    [ 50000.000,  62500.000) = 2 
+    [ 62500.000,  75000.000) = 1 
+    [ 75000.000,  87500.000) = 0 
+    [ 87500.000, 100000.000) = 1 
+    [100000.000, 112500.000) = 0 
+    [112500.000, 125000.000) = 0 
+    [125000.000, 137500.000) = 0 
+    [137500.000, 150000.000) = 0 
+    [150000.000, 162500.000) = 0 
+    [162500.000, 175000.000) = 0 
+    [175000.000, 187500.000) = 1 
+
+  Percentiles, ns/op:
+      p(0.0000) =        ≈ 0 ns/op
+     p(50.0000) =        ≈ 0 ns/op
+     p(90.0000) =    100.000 ns/op
+     p(95.0000) =    100.000 ns/op
+     p(99.0000) =    100.000 ns/op
+     p(99.9000) =    600.000 ns/op
+     p(99.9900) =  23503.488 ns/op
+     p(99.9990) =  93491.891 ns/op
+     p(99.9999) = 186880.000 ns/op
+    p(100.0000) = 186880.000 ns/op
+
+Secondary result "io.github.anshsaxena.bench.AllocationBenchmarks.newTickPerEvent:gc.alloc.rate":
+  5205.135 ±(99.9%) 510.318 MB/sec [Average]
+  (min, avg, max) = (4898.788, 5205.135, 5370.746), stdev = 181.984
+  CI (99.9%): [4694.817, 5715.453] (assumes normal distribution)
+
+Secondary result "io.github.anshsaxena.bench.AllocationBenchmarks.newTickPerEvent:gc.alloc.rate.norm":
+  40.002 ±(99.9%) 0.001 B/op [Average]
+  (min, avg, max) = (40.001, 40.002, 40.002), stdev = 0.001
+  CI (99.9%): [40.001, 40.002] (assumes normal distribution)
+
+Secondary result "io.github.anshsaxena.bench.AllocationBenchmarks.newTickPerEvent:gc.count":
+  55.000 ±(99.9%) 0.001 counts [Sum]
+  (min, avg, max) = (9.000, 9.167, 10.000), stdev = 0.408
+  CI (99.9%): [55.000, 55.000] (assumes normal distribution)
+
+Secondary result "io.github.anshsaxena.bench.AllocationBenchmarks.newTickPerEvent:gc.time":
+  51.000 ±(99.9%) 0.001 ms [Sum]
+  (min, avg, max) = (8.000, 8.500, 9.000), stdev = 0.548
+  CI (99.9%): [51.000, 51.000] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 21.0.12.1, OpenJDK 64-Bit Server VM, 21.0.12.1+1-LTS
+# VM invoker: C:\Users\anshs\AppData\Local\Temp\claude\C--Users-anshs-Desktop-job-hunt\e849d4a1-1e97-45bf-b567-bcd4958ce355\scratchpad\tools\jdk-21.0.12.1+1\bin\java.exe
+# VM options: -XX:+UseG1GC
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 3 iterations, 1 s each
+# Measurement: 6 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Sampling time
+# Benchmark: io.github.anshsaxena.bench.AllocationBenchmarks.primitiveLadderUpdate
+
+# Run progress: 75.00% complete, ETA 00:00:19
+# Fork: 1 of 1
+# Warmup Iteration   1: 49.027 ±(99.9%) 12.956 ns/op
+# Warmup Iteration   2: 49.226 ±(99.9%) 12.590 ns/op
+# Warmup Iteration   3: 195.405 ±(99.9%) 21.881 ns/op
+Iteration   1: 209.864 ±(99.9%) 39.056 ns/op
+                 gc.alloc.rate:      0.256 MB/sec
+                 gc.alloc.rate.norm: 0.001 B/op
+                 gc.count:           ≈ 0 counts
+                 p0.00:              ≈ 0 ns/op
+                 p0.50:              200.000 ns/op
+                 p0.90:              200.000 ns/op
+                 p0.95:              300.000 ns/op
+                 p0.99:              300.000 ns/op
+                 p0.999:             10003.456 ns/op
+                 p0.9999:            78531.507 ns/op
+                 p1.00:              266240.000 ns/op
+
+Iteration   2: 206.787 ±(99.9%) 19.607 ns/op
+                 gc.alloc.rate:      0.226 MB/sec
+                 gc.alloc.rate.norm: 0.001 B/op
+                 gc.count:           ≈ 0 counts
+                 p0.00:              ≈ 0 ns/op
+                 p0.50:              200.000 ns/op
+                 p0.90:              200.000 ns/op
+                 p0.95:              300.000 ns/op
+                 p0.99:              300.000 ns/op
+                 p0.999:             10197.952 ns/op
+                 p0.9999:            44481.690 ns/op
+                 p1.00:              82304.000 ns/op
+
+Iteration   3: 209.138 ±(99.9%) 26.248 ns/op
+                 gc.alloc.rate:      0.254 MB/sec
+                 gc.alloc.rate.norm: 0.001 B/op
+                 gc.count:           ≈ 0 counts
+                 p0.00:              ≈ 0 ns/op
+                 p0.50:              200.000 ns/op
+                 p0.90:              200.000 ns/op
+                 p0.95:              300.000 ns/op
+                 p0.99:              300.000 ns/op
+                 p0.999:             11518.208 ns/op
+                 p0.9999:            79041.434 ns/op
+                 p1.00:              134912.000 ns/op
+
+Iteration   4: 235.437 ±(99.9%) 38.171 ns/op
+                 gc.alloc.rate:      0.253 MB/sec
+                 gc.alloc.rate.norm: 0.001 B/op
+                 gc.count:           ≈ 0 counts
+                 p0.00:              ≈ 0 ns/op
+                 p0.50:              200.000 ns/op
+                 p0.90:              200.000 ns/op
+                 p0.95:              300.000 ns/op
+                 p0.99:              400.000 ns/op
+                 p0.999:             19712.000 ns/op
+                 p0.9999:            88426.086 ns/op
+                 p1.00:              197632.000 ns/op
+
+Iteration   5: 194.724 ±(99.9%) 19.340 ns/op
+                 gc.alloc.rate:      0.227 MB/sec
+                 gc.alloc.rate.norm: 0.001 B/op
+                 gc.count:           ≈ 0 counts
+                 p0.00:              ≈ 0 ns/op
+                 p0.50:              200.000 ns/op
+                 p0.90:              200.000 ns/op
+                 p0.95:              300.000 ns/op
+                 p0.99:              400.000 ns/op
+                 p0.999:             6151.000 ns/op
+                 p0.9999:            57364.000 ns/op
+                 p1.00:              92544.000 ns/op
+
+Iteration   6: 198.677 ±(99.9%) 22.296 ns/op
+                 gc.alloc.rate:      0.226 MB/sec
+                 gc.alloc.rate.norm: 0.001 B/op
+                 gc.count:           ≈ 0 counts
+                 p0.00:              ≈ 0 ns/op
+                 p0.50:              200.000 ns/op
+                 p0.90:              200.000 ns/op
+                 p0.95:              300.000 ns/op
+                 p0.99:              300.000 ns/op
+                 p0.999:             10099.600 ns/op
+                 p0.9999:            74445.965 ns/op
+                 p1.00:              80512.000 ns/op
+
+
+
+Result "io.github.anshsaxena.bench.AllocationBenchmarks.primitiveLadderUpdate":
+  N = 161064
+  mean =    209.073 ±(99.9%) 11.680 ns/op
+
+  Histogram, ns/op:
+    [     0.000,  25000.000) = 160998 
+    [ 25000.000,  50000.000) = 47 
+    [ 50000.000,  75000.000) = 7 
+    [ 75000.000, 100000.000) = 8 
+    [100000.000, 125000.000) = 0 
+    [125000.000, 150000.000) = 2 
+    [150000.000, 175000.000) = 0 
+    [175000.000, 200000.000) = 1 
+    [200000.000, 225000.000) = 0 
+    [225000.000, 250000.000) = 0 
+    [250000.000, 275000.000) = 1 
+
+  Percentiles, ns/op:
+      p(0.0000) =        ≈ 0 ns/op
+     p(50.0000) =    200.000 ns/op
+     p(90.0000) =    200.000 ns/op
+     p(95.0000) =    300.000 ns/op
+     p(99.0000) =    300.000 ns/op
+     p(99.9000) =  10992.000 ns/op
+     p(99.9900) =  64275.744 ns/op
+     p(99.9990) = 224344.525 ns/op
+     p(99.9999) = 266240.000 ns/op
+    p(100.0000) = 266240.000 ns/op
+
+Secondary result "io.github.anshsaxena.bench.AllocationBenchmarks.primitiveLadderUpdate:gc.alloc.rate":
+  0.240 ±(99.9%) 0.043 MB/sec [Average]
+  (min, avg, max) = (0.226, 0.240, 0.256), stdev = 0.015
+  CI (99.9%): [0.198, 0.283] (assumes normal distribution)
+
+Secondary result "io.github.anshsaxena.bench.AllocationBenchmarks.primitiveLadderUpdate:gc.alloc.rate.norm":
+  0.001 ±(99.9%) 0.001 B/op [Average]
+  (min, avg, max) = (0.001, 0.001, 0.001), stdev = 0.001
+  CI (99.9%): [0.001, 0.001] (assumes normal distribution)
+
+Secondary result "io.github.anshsaxena.bench.AllocationBenchmarks.primitiveLadderUpdate:gc.count":
+  ≈ 0 counts
+
+
+# JMH version: 1.37
+# VM version: JDK 21.0.12.1, OpenJDK 64-Bit Server VM, 21.0.12.1+1-LTS
+# VM invoker: C:\Users\anshs\AppData\Local\Temp\claude\C--Users-anshs-Desktop-job-hunt\e849d4a1-1e97-45bf-b567-bcd4958ce355\scratchpad\tools\jdk-21.0.12.1+1\bin\java.exe
+# VM options: -XX:+UseG1GC
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 3 iterations, 1 s each
+# Measurement: 6 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Sampling time
+# Benchmark: io.github.anshsaxena.bench.AllocationBenchmarks.reusedTick
+
+# Run progress: 87.50% complete, ETA 00:00:09
+# Fork: 1 of 1
+# Warmup Iteration   1: 58.323 ±(99.9%) 15.724 ns/op
+# Warmup Iteration   2: 50.008 ±(99.9%) 17.845 ns/op
+# Warmup Iteration   3: 166.696 ±(99.9%) 14.234 ns/op
+Iteration   1: 195.245 ±(99.9%) 22.857 ns/op
+                 gc.alloc.rate:      0.228 MB/sec
+                 gc.alloc.rate.norm: 0.001 B/op
+                 gc.count:           ≈ 0 counts
+                 p0.00:              ≈ 0 ns/op
+                 p0.50:              200.000 ns/op
+                 p0.90:              300.000 ns/op
+                 p0.95:              300.000 ns/op
+                 p0.99:              400.000 ns/op
+                 p0.999:             6045.584 ns/op
+                 p0.9999:            58095.347 ns/op
+                 p1.00:              133376.000 ns/op
+
+Iteration   2: 236.472 ±(99.9%) 141.699 ns/op
+                 gc.alloc.rate:      0.252 MB/sec
+                 gc.alloc.rate.norm: 0.001 B/op
+                 gc.count:           ≈ 0 counts
+                 p0.00:              ≈ 0 ns/op
+                 p0.50:              200.000 ns/op
+                 p0.90:              200.000 ns/op
+                 p0.95:              300.000 ns/op
+                 p0.99:              300.000 ns/op
+                 p0.999:             4590.600 ns/op
+                 p0.9999:            64215.002 ns/op
+                 p1.00:              1218560.000 ns/op
+
+Iteration   3: 185.634 ±(99.9%) 18.421 ns/op
+                 gc.alloc.rate:      0.225 MB/sec
+                 gc.alloc.rate.norm: 0.001 B/op
+                 gc.count:           ≈ 0 counts
+                 p0.00:              ≈ 0 ns/op
+                 p0.50:              200.000 ns/op
+                 p0.90:              200.000 ns/op
+                 p0.95:              300.000 ns/op
+                 p0.99:              300.000 ns/op
+                 p0.999:             4260.384 ns/op
+                 p0.9999:            54318.330 ns/op
+                 p1.00:              93056.000 ns/op
+
+Iteration   4: 223.022 ±(99.9%) 29.010 ns/op
+                 gc.alloc.rate:      0.227 MB/sec
+                 gc.alloc.rate.norm: 0.001 B/op
+                 gc.count:           ≈ 0 counts
+                 p0.00:              ≈ 0 ns/op
+                 p0.50:              200.000 ns/op
+                 p0.90:              200.000 ns/op
+                 p0.95:              300.000 ns/op
+                 p0.99:              400.000 ns/op
+                 p0.999:             13053.824 ns/op
+                 p0.9999:            85919.923 ns/op
+                 p1.00:              117248.000 ns/op
+
+Iteration   5: 194.198 ±(99.9%) 13.207 ns/op
+                 gc.alloc.rate:      0.227 MB/sec
+                 gc.alloc.rate.norm: 0.001 B/op
+                 gc.count:           ≈ 0 counts
+                 p0.00:              ≈ 0 ns/op
+                 p0.50:              200.000 ns/op
+                 p0.90:              200.000 ns/op
+                 p0.95:              300.000 ns/op
+                 p0.99:              400.000 ns/op
+                 p0.999:             4450.912 ns/op
+                 p0.9999:            29363.930 ns/op
+                 p1.00:              70784.000 ns/op
+
+Iteration   6: 254.451 ±(99.9%) 46.679 ns/op
+                 gc.alloc.rate:      0.253 MB/sec
+                 gc.alloc.rate.norm: 0.001 B/op
+                 gc.count:           ≈ 0 counts
+                 p0.00:              ≈ 0 ns/op
+                 p0.50:              200.000 ns/op
+                 p0.90:              300.000 ns/op
+                 p0.95:              300.000 ns/op
+                 p0.99:              400.000 ns/op
+                 p0.999:             18679.968 ns/op
+                 p0.9999:            119638.285 ns/op
+                 p1.00:              144896.000 ns/op
+
+
+
+Result "io.github.anshsaxena.bench.AllocationBenchmarks.reusedTick":
+  N = 170593
+  mean =    214.505 ±(99.9%) 26.264 ns/op
+
+  Histogram, ns/op:
+    [      0.000,  125000.000) = 170588 
+    [ 125000.000,  250000.000) = 3 
+    [ 250000.000,  375000.000) = 1 
+    [ 375000.000,  500000.000) = 0 
+    [ 500000.000,  625000.000) = 0 
+    [ 625000.000,  750000.000) = 0 
+    [ 750000.000,  875000.000) = 0 
+    [ 875000.000, 1000000.000) = 0 
+    [1000000.000, 1125000.000) = 0 
+    [1125000.000, 1250000.000) = 1 
+    [1250000.000, 1375000.000) = 0 
+    [1375000.000, 1500000.000) = 0 
+    [1500000.000, 1625000.000) = 0 
+    [1625000.000, 1750000.000) = 0 
+    [1750000.000, 1875000.000) = 0 
+
+  Percentiles, ns/op:
+      p(0.0000) =        ≈ 0 ns/op
+     p(50.0000) =    200.000 ns/op
+     p(90.0000) =    200.000 ns/op
+     p(95.0000) =    300.000 ns/op
+     p(99.0000) =    400.000 ns/op
+     p(99.9000) =   8162.400 ns/op
+     p(99.9900) =  81465.062 ns/op
+     p(99.9990) = 546640.661 ns/op
+     p(99.9999) = 1218560.000 ns/op
+    p(100.0000) = 1218560.000 ns/op
+
+Secondary result "io.github.anshsaxena.bench.AllocationBenchmarks.reusedTick:gc.alloc.rate":
+  0.235 ±(99.9%) 0.038 MB/sec [Average]
+  (min, avg, max) = (0.225, 0.235, 0.253), stdev = 0.013
+  CI (99.9%): [0.198, 0.273] (assumes normal distribution)
+
+Secondary result "io.github.anshsaxena.bench.AllocationBenchmarks.reusedTick:gc.alloc.rate.norm":
+  0.001 ±(99.9%) 0.001 B/op [Average]
+  (min, avg, max) = (0.001, 0.001, 0.001), stdev = 0.001
+  CI (99.9%): [0.001, 0.001] (assumes normal distribution)
+
+Secondary result "io.github.anshsaxena.bench.AllocationBenchmarks.reusedTick:gc.count":
+  ≈ 0 counts
+
+
+# Run complete. Total time: 00:01:17
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+NOTE: Current JVM experimentally supports Compiler Blackholes, and they are in use. Please exercise
+extra caution when trusting the results, look into the generated code to check the benchmark still
+works, and factor in a small probability of new VM bugs. Additionally, while comparisons between
+different JVMs are already problematic, the performance difference caused by different Blackhole
+modes can be very significant. Please make sure you use the consistent Blackhole mode for comparisons.
+
+Benchmark                                                        Mode     Cnt        Score      Error   Units
+AllocationBenchmarks.boxedLadderUpdate                           avgt       6       17.498 ±    8.000   ns/op
+AllocationBenchmarks.boxedLadderUpdate:gc.alloc.rate             avgt       6     2496.687 ±  930.214  MB/sec
+AllocationBenchmarks.boxedLadderUpdate:gc.alloc.rate.norm        avgt       6       45.000 ±    0.001    B/op
+AllocationBenchmarks.boxedLadderUpdate:gc.count                  avgt       6       38.000             counts
+AllocationBenchmarks.boxedLadderUpdate:gc.time                   avgt       6       37.000                 ms
+AllocationBenchmarks.newTickPerEvent                             avgt       6        5.222 ±    0.973   ns/op
+AllocationBenchmarks.newTickPerEvent:gc.alloc.rate               avgt       6     7327.437 ± 1278.260  MB/sec
+AllocationBenchmarks.newTickPerEvent:gc.alloc.rate.norm          avgt       6       40.000 ±    0.001    B/op
+AllocationBenchmarks.newTickPerEvent:gc.count                    avgt       6       74.000             counts
+AllocationBenchmarks.newTickPerEvent:gc.time                     avgt       6       70.000                 ms
+AllocationBenchmarks.primitiveLadderUpdate                       avgt       6        1.459 ±    0.692   ns/op
+AllocationBenchmarks.primitiveLadderUpdate:gc.alloc.rate         avgt       6        0.007 ±    0.001  MB/sec
+AllocationBenchmarks.primitiveLadderUpdate:gc.alloc.rate.norm    avgt       6       ≈ 10⁻⁵               B/op
+AllocationBenchmarks.primitiveLadderUpdate:gc.count              avgt       6          ≈ 0             counts
+AllocationBenchmarks.reusedTick                                  avgt       6        1.091 ±    0.085   ns/op
+AllocationBenchmarks.reusedTick:gc.alloc.rate                    avgt       6        0.006 ±    0.001  MB/sec
+AllocationBenchmarks.reusedTick:gc.alloc.rate.norm               avgt       6       ≈ 10⁻⁵               B/op
+AllocationBenchmarks.reusedTick:gc.count                         avgt       6          ≈ 0             counts
+AllocationBenchmarks.boxedLadderUpdate                         sample  160104       75.567 ±    5.974   ns/op
+AllocationBenchmarks.boxedLadderUpdate:gc.alloc.rate           sample       6     2078.617 ±  845.370  MB/sec
+AllocationBenchmarks.boxedLadderUpdate:gc.alloc.rate.norm      sample       6       45.005 ±    0.003    B/op
+AllocationBenchmarks.boxedLadderUpdate:gc.count                sample       6       33.000             counts
+AllocationBenchmarks.boxedLadderUpdate:gc.time                 sample       6       33.000                 ms
+AllocationBenchmarks.boxedLadderUpdate:p0.00                   sample                  ≈ 0              ns/op
+AllocationBenchmarks.boxedLadderUpdate:p0.50                   sample              100.000              ns/op
+AllocationBenchmarks.boxedLadderUpdate:p0.90                   sample              100.000              ns/op
+AllocationBenchmarks.boxedLadderUpdate:p0.95                   sample              100.000              ns/op
+AllocationBenchmarks.boxedLadderUpdate:p0.99                   sample              200.000              ns/op
+AllocationBenchmarks.boxedLadderUpdate:p0.999                  sample             1400.000              ns/op
+AllocationBenchmarks.boxedLadderUpdate:p0.9999                 sample            29280.000              ns/op
+AllocationBenchmarks.boxedLadderUpdate:p1.00                   sample           140544.000              ns/op
+AllocationBenchmarks.newTickPerEvent                           sample  200679       51.955 ±    4.578   ns/op
+AllocationBenchmarks.newTickPerEvent:gc.alloc.rate             sample       6     5205.135 ±  510.318  MB/sec
+AllocationBenchmarks.newTickPerEvent:gc.alloc.rate.norm        sample       6       40.002 ±    0.001    B/op
+AllocationBenchmarks.newTickPerEvent:gc.count                  sample       6       55.000             counts
+AllocationBenchmarks.newTickPerEvent:gc.time                   sample       6       51.000                 ms
+AllocationBenchmarks.newTickPerEvent:p0.00                     sample                  ≈ 0              ns/op
+AllocationBenchmarks.newTickPerEvent:p0.50                     sample                  ≈ 0              ns/op
+AllocationBenchmarks.newTickPerEvent:p0.90                     sample              100.000              ns/op
+AllocationBenchmarks.newTickPerEvent:p0.95                     sample              100.000              ns/op
+AllocationBenchmarks.newTickPerEvent:p0.99                     sample              100.000              ns/op
+AllocationBenchmarks.newTickPerEvent:p0.999                    sample              600.000              ns/op
+AllocationBenchmarks.newTickPerEvent:p0.9999                   sample            23503.488              ns/op
+AllocationBenchmarks.newTickPerEvent:p1.00                     sample           186880.000              ns/op
+AllocationBenchmarks.primitiveLadderUpdate                     sample  161064      209.073 ±   11.680   ns/op
+AllocationBenchmarks.primitiveLadderUpdate:gc.alloc.rate       sample       6        0.240 ±    0.043  MB/sec
+AllocationBenchmarks.primitiveLadderUpdate:gc.alloc.rate.norm  sample       6        0.001 ±    0.001    B/op
+AllocationBenchmarks.primitiveLadderUpdate:gc.count            sample       6          ≈ 0             counts
+AllocationBenchmarks.primitiveLadderUpdate:p0.00               sample                  ≈ 0              ns/op
+AllocationBenchmarks.primitiveLadderUpdate:p0.50               sample              200.000              ns/op
+AllocationBenchmarks.primitiveLadderUpdate:p0.90               sample              200.000              ns/op
+AllocationBenchmarks.primitiveLadderUpdate:p0.95               sample              300.000              ns/op
+AllocationBenchmarks.primitiveLadderUpdate:p0.99               sample              300.000              ns/op
+AllocationBenchmarks.primitiveLadderUpdate:p0.999              sample            10992.000              ns/op
+AllocationBenchmarks.primitiveLadderUpdate:p0.9999             sample            64275.744              ns/op
+AllocationBenchmarks.primitiveLadderUpdate:p1.00               sample           266240.000              ns/op
+AllocationBenchmarks.reusedTick                                sample  170593      214.505 ±   26.264   ns/op
+AllocationBenchmarks.reusedTick:gc.alloc.rate                  sample       6        0.235 ±    0.038  MB/sec
+AllocationBenchmarks.reusedTick:gc.alloc.rate.norm             sample       6        0.001 ±    0.001    B/op
+AllocationBenchmarks.reusedTick:gc.count                       sample       6          ≈ 0             counts
+AllocationBenchmarks.reusedTick:p0.00                          sample                  ≈ 0              ns/op
+AllocationBenchmarks.reusedTick:p0.50                          sample              200.000              ns/op
+AllocationBenchmarks.reusedTick:p0.90                          sample              200.000              ns/op
+AllocationBenchmarks.reusedTick:p0.95                          sample              300.000              ns/op
+AllocationBenchmarks.reusedTick:p0.99                          sample              400.000              ns/op
+AllocationBenchmarks.reusedTick:p0.999                         sample             8162.400              ns/op
+AllocationBenchmarks.reusedTick:p0.9999                        sample            81465.062              ns/op
+AllocationBenchmarks.reusedTick:p1.00                          sample          1218560.000              ns/op
+
+Benchmark result is saved to results/allocation_G1.json

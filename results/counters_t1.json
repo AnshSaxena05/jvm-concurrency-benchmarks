@@ -1,0 +1,260 @@
+[
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "io.github.anshsaxena.bench.CounterBenchmarks.atomicLong",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 2,
+        "jvm" : "C:\\Users\\anshs\\AppData\\Local\\Temp\\claude\\C--Users-anshs-Desktop-job-hunt\\e849d4a1-1e97-45bf-b567-bcd4958ce355\\scratchpad\\tools\\jdk-21.0.12.1+1\\bin\\java.exe",
+        "jvmArgs" : [
+        ],
+        "jdkVersion" : "21.0.12.1",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "21.0.12.1+1-LTS",
+        "warmupIterations" : 3,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 8,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 152.27522674406416,
+            "scoreError" : 11.27654514477687,
+            "scoreConfidence" : [
+                140.9986815992873,
+                163.55177188884102
+            ],
+            "scorePercentiles" : {
+                "0.0" : 122.07643753482778,
+                "50.0" : 154.44365303288498,
+                "90.0" : 162.29306329063098,
+                "95.0" : 163.5514016830591,
+                "99.0" : 163.5514016830591,
+                "99.9" : 163.5514016830591,
+                "99.99" : 163.5514016830591,
+                "99.999" : 163.5514016830591,
+                "99.9999" : 163.5514016830591,
+                "100.0" : 163.5514016830591
+            },
+            "scoreUnit" : "ops/us",
+            "rawData" : [
+                [
+                    122.07643753482778,
+                    161.75377540816177,
+                    157.80459409939374,
+                    159.88412254502268,
+                    154.280058242515,
+                    154.60724782325497,
+                    158.8247541565664,
+                    163.5514016830591
+                ],
+                [
+                    156.28121307286688,
+                    154.08782596535661,
+                    152.59813982678648,
+                    154.18096101210003,
+                    159.0998119823182,
+                    150.42670316008213,
+                    130.8566685343745,
+                    146.0899128583399
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "io.github.anshsaxena.bench.CounterBenchmarks.longAdder",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 2,
+        "jvm" : "C:\\Users\\anshs\\AppData\\Local\\Temp\\claude\\C--Users-anshs-Desktop-job-hunt\\e849d4a1-1e97-45bf-b567-bcd4958ce355\\scratchpad\\tools\\jdk-21.0.12.1+1\\bin\\java.exe",
+        "jvmArgs" : [
+        ],
+        "jdkVersion" : "21.0.12.1",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "21.0.12.1+1-LTS",
+        "warmupIterations" : 3,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 8,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 91.93409955675679,
+            "scoreError" : 1.6822810553335368,
+            "scoreConfidence" : [
+                90.25181850142326,
+                93.61638061209032
+            ],
+            "scorePercentiles" : {
+                "0.0" : 88.84122312718561,
+                "50.0" : 91.7717472128034,
+                "90.0" : 94.37947618040454,
+                "95.0" : 95.85506697562549,
+                "99.0" : 95.85506697562549,
+                "99.9" : 95.85506697562549,
+                "99.99" : 95.85506697562549,
+                "99.999" : 95.85506697562549,
+                "99.9999" : 95.85506697562549,
+                "100.0" : 95.85506697562549
+            },
+            "scoreUnit" : "ops/us",
+            "rawData" : [
+                [
+                    92.46905202379763,
+                    91.6536909922749,
+                    91.68128957361583,
+                    91.11653790594286,
+                    89.32116527716241,
+                    91.77897140494545,
+                    88.84122312718561,
+                    90.90878463984643
+                ],
+                [
+                    92.8400821538937,
+                    91.88534109364656,
+                    91.56311707646638,
+                    91.932846460242,
+                    91.76452302066134,
+                    93.74708012530984,
+                    93.58682105749227,
+                    95.85506697562549
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "io.github.anshsaxena.bench.CounterBenchmarks.reentrantLock",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 2,
+        "jvm" : "C:\\Users\\anshs\\AppData\\Local\\Temp\\claude\\C--Users-anshs-Desktop-job-hunt\\e849d4a1-1e97-45bf-b567-bcd4958ce355\\scratchpad\\tools\\jdk-21.0.12.1+1\\bin\\java.exe",
+        "jvmArgs" : [
+        ],
+        "jdkVersion" : "21.0.12.1",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "21.0.12.1+1-LTS",
+        "warmupIterations" : 3,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 8,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 51.374507435467045,
+            "scoreError" : 2.8339436381893597,
+            "scoreConfidence" : [
+                48.540563797277684,
+                54.208451073656406
+            ],
+            "scorePercentiles" : {
+                "0.0" : 42.32657702836321,
+                "50.0" : 52.42605529769531,
+                "90.0" : 53.43724671534829,
+                "95.0" : 53.63325588953147,
+                "99.0" : 53.63325588953147,
+                "99.9" : 53.63325588953147,
+                "99.99" : 53.63325588953147,
+                "99.999" : 53.63325588953147,
+                "99.9999" : 53.63325588953147,
+                "100.0" : 53.63325588953147
+            },
+            "scoreUnit" : "ops/us",
+            "rawData" : [
+                [
+                    51.305802342248136,
+                    52.91521511583229,
+                    53.21601806946299,
+                    53.24862218902289,
+                    49.3974419518146,
+                    52.4129827803182,
+                    53.353242783555494,
+                    53.63325588953147
+                ],
+                [
+                    52.7768891066837,
+                    52.88108756327036,
+                    51.00033448195747,
+                    51.641622562764695,
+                    52.43912781507241,
+                    49.78381978407133,
+                    49.660079503503454,
+                    42.32657702836321
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "io.github.anshsaxena.bench.CounterBenchmarks.synchronizedBlock",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 2,
+        "jvm" : "C:\\Users\\anshs\\AppData\\Local\\Temp\\claude\\C--Users-anshs-Desktop-job-hunt\\e849d4a1-1e97-45bf-b567-bcd4958ce355\\scratchpad\\tools\\jdk-21.0.12.1+1\\bin\\java.exe",
+        "jvmArgs" : [
+        ],
+        "jdkVersion" : "21.0.12.1",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "21.0.12.1+1-LTS",
+        "warmupIterations" : 3,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 8,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 40.373559054493604,
+            "scoreError" : 2.781839340902531,
+            "scoreConfidence" : [
+                37.591719713591075,
+                43.15539839539613
+            ],
+            "scorePercentiles" : {
+                "0.0" : 33.96501897717971,
+                "50.0" : 41.83367714093336,
+                "90.0" : 42.660401753124866,
+                "95.0" : 42.822935837712784,
+                "99.0" : 42.822935837712784,
+                "99.9" : 42.822935837712784,
+                "99.99" : 42.822935837712784,
+                "99.999" : 42.822935837712784,
+                "99.9999" : 42.822935837712784,
+                "100.0" : 42.822935837712784
+            },
+            "scoreUnit" : "ops/us",
+            "rawData" : [
+                [
+                    40.94802793235268,
+                    37.61365132201495,
+                    33.96501897717971,
+                    36.70724195512336,
+                    41.854583286567596,
+                    39.041203150938436,
+                    41.46401620619698,
+                    36.43009173237038
+                ],
+                [
+                    42.822935837712784,
+                    42.01081369980949,
+                    42.59074428830147,
+                    42.34838743336446,
+                    41.812770995299125,
+                    42.066214718646634,
+                    42.31410605373754,
+                    41.98713728228209
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+]
+
+

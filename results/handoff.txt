@@ -1,0 +1,453 @@
+# JMH version: 1.37
+# VM version: JDK 21.0.12.1, OpenJDK 64-Bit Server VM, 21.0.12.1+1-LTS
+# VM invoker: C:\Users\anshs\AppData\Local\Temp\claude\C--Users-anshs-Desktop-job-hunt\e849d4a1-1e97-45bf-b567-bcd4958ce355\scratchpad\tools\jdk-21.0.12.1+1\bin\java.exe
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 3 iterations, 1 s each
+# Measurement: 8 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 2 threads (1 group; 1x "consume", 1x "produce" in each group), will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: io.github.anshsaxena.bench.QueueHandoffBenchmarks.handoff
+# Parameters: (impl = arrayBlocking)
+
+# Run progress: 0.00% complete, ETA 00:01:28
+# Fork: 1 of 2
+# Warmup Iteration   1: 9.338 ops/us
+# Warmup Iteration   2: 8.004 ops/us
+# Warmup Iteration   3: 7.799 ops/us
+Iteration   1: 10.298 ops/us
+                 consume: 5.149 ops/us
+                 produce: 5.149 ops/us
+
+Iteration   2: 10.653 ops/us
+                 consume: 5.326 ops/us
+                 produce: 5.326 ops/us
+
+Iteration   3: 8.645 ops/us
+                 consume: 4.323 ops/us
+                 produce: 4.323 ops/us
+
+Iteration   4: 7.369 ops/us
+                 consume: 3.684 ops/us
+                 produce: 3.685 ops/us
+
+Iteration   5: 7.121 ops/us
+                 consume: 3.560 ops/us
+                 produce: 3.561 ops/us
+
+Iteration   6: 8.550 ops/us
+                 consume: 4.275 ops/us
+                 produce: 4.275 ops/us
+
+Iteration   7: 10.291 ops/us
+                 consume: 5.145 ops/us
+                 produce: 5.146 ops/us
+
+Iteration   8: 9.169 ops/us
+                 consume: 4.584 ops/us
+                 produce: 4.585 ops/us
+
+
+# Run progress: 12.50% complete, ETA 00:01:21
+# Fork: 2 of 2
+# Warmup Iteration   1: 8.874 ops/us
+# Warmup Iteration   2: 7.667 ops/us
+# Warmup Iteration   3: 6.176 ops/us
+Iteration   1: 6.274 ops/us
+                 consume: 3.137 ops/us
+                 produce: 3.137 ops/us
+
+Iteration   2: 7.435 ops/us
+                 consume: 3.718 ops/us
+                 produce: 3.718 ops/us
+
+Iteration   3: 14.913 ops/us
+                 consume: 7.456 ops/us
+                 produce: 7.456 ops/us
+
+Iteration   4: 15.758 ops/us
+                 consume: 7.880 ops/us
+                 produce: 7.878 ops/us
+
+Iteration   5: 16.373 ops/us
+                 consume: 8.187 ops/us
+                 produce: 8.187 ops/us
+
+Iteration   6: 14.715 ops/us
+                 consume: 7.357 ops/us
+                 produce: 7.357 ops/us
+
+Iteration   7: 13.703 ops/us
+                 consume: 6.851 ops/us
+                 produce: 6.852 ops/us
+
+Iteration   8: 11.928 ops/us
+                 consume: 5.964 ops/us
+                 produce: 5.964 ops/us
+
+
+
+Result "io.github.anshsaxena.bench.QueueHandoffBenchmarks.handoff":
+  10.825 ±(99.9%) 3.403 ops/us [Average]
+  (min, avg, max) = (6.274, 10.825, 16.373), stdev = 3.342
+  CI (99.9%): [7.421, 14.228] (assumes normal distribution)
+
+Secondary result "io.github.anshsaxena.bench.QueueHandoffBenchmarks.handoff:consume":
+  5.412 ±(99.9%) 1.702 ops/us [Average]
+  (min, avg, max) = (3.137, 5.412, 8.187), stdev = 1.671
+  CI (99.9%): [3.710, 7.114] (assumes normal distribution)
+
+Secondary result "io.github.anshsaxena.bench.QueueHandoffBenchmarks.handoff:produce":
+  5.412 ±(99.9%) 1.702 ops/us [Average]
+  (min, avg, max) = (3.137, 5.412, 8.187), stdev = 1.671
+  CI (99.9%): [3.711, 7.114] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 21.0.12.1, OpenJDK 64-Bit Server VM, 21.0.12.1+1-LTS
+# VM invoker: C:\Users\anshs\AppData\Local\Temp\claude\C--Users-anshs-Desktop-job-hunt\e849d4a1-1e97-45bf-b567-bcd4958ce355\scratchpad\tools\jdk-21.0.12.1+1\bin\java.exe
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 3 iterations, 1 s each
+# Measurement: 8 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 2 threads (1 group; 1x "consume", 1x "produce" in each group), will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: io.github.anshsaxena.bench.QueueHandoffBenchmarks.handoff
+# Parameters: (impl = linkedBlocking)
+
+# Run progress: 25.00% complete, ETA 00:01:10
+# Fork: 1 of 2
+# Warmup Iteration   1: 5.795 ops/us
+# Warmup Iteration   2: 7.829 ops/us
+# Warmup Iteration   3: 10.649 ops/us
+Iteration   1: 6.281 ops/us
+                 consume: 3.138 ops/us
+                 produce: 3.142 ops/us
+
+Iteration   2: 8.940 ops/us
+                 consume: 4.470 ops/us
+                 produce: 4.470 ops/us
+
+Iteration   3: 5.861 ops/us
+                 consume: 2.931 ops/us
+                 produce: 2.931 ops/us
+
+Iteration   4: 8.529 ops/us
+                 consume: 4.264 ops/us
+                 produce: 4.265 ops/us
+
+Iteration   5: 7.313 ops/us
+                 consume: 3.657 ops/us
+                 produce: 3.657 ops/us
+
+Iteration   6: 9.609 ops/us
+                 consume: 4.804 ops/us
+                 produce: 4.805 ops/us
+
+Iteration   7: 6.062 ops/us
+                 consume: 3.031 ops/us
+                 produce: 3.032 ops/us
+
+Iteration   8: 8.059 ops/us
+                 consume: 4.029 ops/us
+                 produce: 4.030 ops/us
+
+
+# Run progress: 37.50% complete, ETA 00:00:58
+# Fork: 2 of 2
+# Warmup Iteration   1: 7.440 ops/us
+# Warmup Iteration   2: 5.119 ops/us
+# Warmup Iteration   3: 6.665 ops/us
+Iteration   1: 7.330 ops/us
+                 consume: 3.665 ops/us
+                 produce: 3.665 ops/us
+
+Iteration   2: 10.718 ops/us
+                 consume: 5.359 ops/us
+                 produce: 5.359 ops/us
+
+Iteration   3: 15.551 ops/us
+                 consume: 7.775 ops/us
+                 produce: 7.775 ops/us
+
+Iteration   4: 8.348 ops/us
+                 consume: 4.174 ops/us
+                 produce: 4.175 ops/us
+
+Iteration   5: 10.528 ops/us
+                 consume: 5.264 ops/us
+                 produce: 5.264 ops/us
+
+Iteration   6: 10.492 ops/us
+                 consume: 5.245 ops/us
+                 produce: 5.246 ops/us
+
+Iteration   7: 10.184 ops/us
+                 consume: 5.092 ops/us
+                 produce: 5.092 ops/us
+
+Iteration   8: 8.637 ops/us
+                 consume: 4.318 ops/us
+                 produce: 4.319 ops/us
+
+
+
+Result "io.github.anshsaxena.bench.QueueHandoffBenchmarks.handoff":
+  8.903 ±(99.9%) 2.427 ops/us [Average]
+  (min, avg, max) = (5.861, 8.903, 15.551), stdev = 2.384
+  CI (99.9%): [6.476, 11.330] (assumes normal distribution)
+
+Secondary result "io.github.anshsaxena.bench.QueueHandoffBenchmarks.handoff:consume":
+  4.451 ±(99.9%) 1.214 ops/us [Average]
+  (min, avg, max) = (2.931, 4.451, 7.775), stdev = 1.192
+  CI (99.9%): [3.237, 5.665] (assumes normal distribution)
+
+Secondary result "io.github.anshsaxena.bench.QueueHandoffBenchmarks.handoff:produce":
+  4.452 ±(99.9%) 1.213 ops/us [Average]
+  (min, avg, max) = (2.931, 4.452, 7.775), stdev = 1.192
+  CI (99.9%): [3.238, 5.665] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 21.0.12.1, OpenJDK 64-Bit Server VM, 21.0.12.1+1-LTS
+# VM invoker: C:\Users\anshs\AppData\Local\Temp\claude\C--Users-anshs-Desktop-job-hunt\e849d4a1-1e97-45bf-b567-bcd4958ce355\scratchpad\tools\jdk-21.0.12.1+1\bin\java.exe
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 3 iterations, 1 s each
+# Measurement: 8 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 2 threads (1 group; 1x "consume", 1x "produce" in each group), will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: io.github.anshsaxena.bench.QueueHandoffBenchmarks.handoff
+# Parameters: (impl = concurrentLinked)
+
+# Run progress: 50.00% complete, ETA 00:00:47
+# Fork: 1 of 2
+# Warmup Iteration   1: 23.406 ops/us
+# Warmup Iteration   2: 33.548 ops/us
+# Warmup Iteration   3: 28.530 ops/us
+Iteration   1: 27.971 ops/us
+                 consume: 13.977 ops/us
+                 produce: 13.993 ops/us
+
+Iteration   2: 22.258 ops/us
+                 consume: 11.116 ops/us
+                 produce: 11.142 ops/us
+
+Iteration   3: 23.291 ops/us
+                 consume: 11.641 ops/us
+                 produce: 11.650 ops/us
+
+Iteration   4: 18.871 ops/us
+                 consume: 9.436 ops/us
+                 produce: 9.435 ops/us
+
+Iteration   5: 23.325 ops/us
+                 consume: 11.646 ops/us
+                 produce: 11.679 ops/us
+
+Iteration   6: 32.322 ops/us
+                 consume: 15.882 ops/us
+                 produce: 16.439 ops/us
+
+Iteration   7: 30.615 ops/us
+                 consume: 15.308 ops/us
+                 produce: 15.307 ops/us
+
+Iteration   8: 27.750 ops/us
+                 consume: 13.791 ops/us
+                 produce: 13.959 ops/us
+
+
+# Run progress: 62.50% complete, ETA 00:00:35
+# Fork: 2 of 2
+# Warmup Iteration   1: 29.403 ops/us
+# Warmup Iteration   2: 33.786 ops/us
+# Warmup Iteration   3: 32.207 ops/us
+Iteration   1: 29.491 ops/us
+                 consume: 13.898 ops/us
+                 produce: 15.592 ops/us
+
+Iteration   2: 29.333 ops/us
+                 consume: 14.667 ops/us
+                 produce: 14.667 ops/us
+
+Iteration   3: 25.496 ops/us
+                 consume: 12.681 ops/us
+                 produce: 12.815 ops/us
+
+Iteration   4: 23.029 ops/us
+                 consume: 11.360 ops/us
+                 produce: 11.669 ops/us
+
+Iteration   5: 25.917 ops/us
+                 consume: 12.958 ops/us
+                 produce: 12.958 ops/us
+
+Iteration   6: 30.368 ops/us
+                 consume: 13.789 ops/us
+                 produce: 16.579 ops/us
+
+Iteration   7: 30.584 ops/us
+                 consume: 15.293 ops/us
+                 produce: 15.291 ops/us
+
+Iteration   8: 29.201 ops/us
+                 consume: 14.596 ops/us
+                 produce: 14.605 ops/us
+
+
+
+Result "io.github.anshsaxena.bench.QueueHandoffBenchmarks.handoff":
+  26.864 ±(99.9%) 3.884 ops/us [Average]
+  (min, avg, max) = (18.871, 26.864, 32.322), stdev = 3.815
+  CI (99.9%): [22.979, 30.748] (assumes normal distribution)
+
+Secondary result "io.github.anshsaxena.bench.QueueHandoffBenchmarks.handoff:consume":
+  13.252 ±(99.9%) 1.839 ops/us [Average]
+  (min, avg, max) = (9.436, 13.252, 15.882), stdev = 1.806
+  CI (99.9%): [11.414, 15.091] (assumes normal distribution)
+
+Secondary result "io.github.anshsaxena.bench.QueueHandoffBenchmarks.handoff:produce":
+  13.611 ±(99.9%) 2.115 ops/us [Average]
+  (min, avg, max) = (9.435, 13.611, 16.579), stdev = 2.078
+  CI (99.9%): [11.496, 15.727] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 21.0.12.1, OpenJDK 64-Bit Server VM, 21.0.12.1+1-LTS
+# VM invoker: C:\Users\anshs\AppData\Local\Temp\claude\C--Users-anshs-Desktop-job-hunt\e849d4a1-1e97-45bf-b567-bcd4958ce355\scratchpad\tools\jdk-21.0.12.1+1\bin\java.exe
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 3 iterations, 1 s each
+# Measurement: 8 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 2 threads (1 group; 1x "consume", 1x "produce" in each group), will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: io.github.anshsaxena.bench.QueueHandoffBenchmarks.handoff
+# Parameters: (impl = spscRing)
+
+# Run progress: 75.00% complete, ETA 00:00:23
+# Fork: 1 of 2
+# Warmup Iteration   1: 65.658 ops/us
+# Warmup Iteration   2: 77.861 ops/us
+# Warmup Iteration   3: 91.112 ops/us
+Iteration   1: 96.719 ops/us
+                 consume: 48.359 ops/us
+                 produce: 48.359 ops/us
+
+Iteration   2: 85.446 ops/us
+                 consume: 42.723 ops/us
+                 produce: 42.723 ops/us
+
+Iteration   3: 83.025 ops/us
+                 consume: 41.513 ops/us
+                 produce: 41.512 ops/us
+
+Iteration   4: 103.860 ops/us
+                 consume: 51.930 ops/us
+                 produce: 51.930 ops/us
+
+Iteration   5: 93.059 ops/us
+                 consume: 46.531 ops/us
+                 produce: 46.529 ops/us
+
+Iteration   6: 56.111 ops/us
+                 consume: 28.056 ops/us
+                 produce: 28.055 ops/us
+
+Iteration   7: 67.682 ops/us
+                 consume: 33.841 ops/us
+                 produce: 33.841 ops/us
+
+Iteration   8: 59.519 ops/us
+                 consume: 29.759 ops/us
+                 produce: 29.760 ops/us
+
+
+# Run progress: 87.50% complete, ETA 00:00:11
+# Fork: 2 of 2
+# Warmup Iteration   1: 87.792 ops/us
+# Warmup Iteration   2: 54.271 ops/us
+# Warmup Iteration   3: 65.933 ops/us
+Iteration   1: 95.994 ops/us
+                 consume: 47.997 ops/us
+                 produce: 47.996 ops/us
+
+Iteration   2: 72.249 ops/us
+                 consume: 36.124 ops/us
+                 produce: 36.124 ops/us
+
+Iteration   3: 56.680 ops/us
+                 consume: 28.340 ops/us
+                 produce: 28.340 ops/us
+
+Iteration   4: 59.172 ops/us
+                 consume: 29.588 ops/us
+                 produce: 29.584 ops/us
+
+Iteration   5: 76.288 ops/us
+                 consume: 38.139 ops/us
+                 produce: 38.150 ops/us
+
+Iteration   6: 92.968 ops/us
+                 consume: 46.484 ops/us
+                 produce: 46.484 ops/us
+
+Iteration   7: 66.710 ops/us
+                 consume: 33.355 ops/us
+                 produce: 33.354 ops/us
+
+Iteration   8: 72.280 ops/us
+                 consume: 36.140 ops/us
+                 produce: 36.141 ops/us
+
+
+
+Result "io.github.anshsaxena.bench.QueueHandoffBenchmarks.handoff":
+  77.360 ±(99.9%) 16.206 ops/us [Average]
+  (min, avg, max) = (56.111, 77.360, 103.860), stdev = 15.917
+  CI (99.9%): [61.154, 93.567] (assumes normal distribution)
+
+Secondary result "io.github.anshsaxena.bench.QueueHandoffBenchmarks.handoff:consume":
+  38.680 ±(99.9%) 8.103 ops/us [Average]
+  (min, avg, max) = (28.056, 38.680, 51.930), stdev = 7.958
+  CI (99.9%): [30.577, 46.783] (assumes normal distribution)
+
+Secondary result "io.github.anshsaxena.bench.QueueHandoffBenchmarks.handoff:produce":
+  38.680 ±(99.9%) 8.103 ops/us [Average]
+  (min, avg, max) = (28.055, 38.680, 51.930), stdev = 7.958
+  CI (99.9%): [30.577, 46.783] (assumes normal distribution)
+
+
+# Run complete. Total time: 00:01:34
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+NOTE: Current JVM experimentally supports Compiler Blackholes, and they are in use. Please exercise
+extra caution when trusting the results, look into the generated code to check the benchmark still
+works, and factor in a small probability of new VM bugs. Additionally, while comparisons between
+different JVMs are already problematic, the performance difference caused by different Blackhole
+modes can be very significant. Please make sure you use the consistent Blackhole mode for comparisons.
+
+Benchmark                                         (impl)   Mode  Cnt   Score    Error   Units
+QueueHandoffBenchmarks.handoff             arrayBlocking  thrpt   16  10.825 ±  3.403  ops/us
+QueueHandoffBenchmarks.handoff:consume     arrayBlocking  thrpt   16   5.412 ±  1.702  ops/us
+QueueHandoffBenchmarks.handoff:produce     arrayBlocking  thrpt   16   5.412 ±  1.702  ops/us
+QueueHandoffBenchmarks.handoff            linkedBlocking  thrpt   16   8.903 ±  2.427  ops/us
+QueueHandoffBenchmarks.handoff:consume    linkedBlocking  thrpt   16   4.451 ±  1.214  ops/us
+QueueHandoffBenchmarks.handoff:produce    linkedBlocking  thrpt   16   4.452 ±  1.213  ops/us
+QueueHandoffBenchmarks.handoff          concurrentLinked  thrpt   16  26.864 ±  3.884  ops/us
+QueueHandoffBenchmarks.handoff:consume  concurrentLinked  thrpt   16  13.252 ±  1.839  ops/us
+QueueHandoffBenchmarks.handoff:produce  concurrentLinked  thrpt   16  13.611 ±  2.115  ops/us
+QueueHandoffBenchmarks.handoff                  spscRing  thrpt   16  77.360 ± 16.206  ops/us
+QueueHandoffBenchmarks.handoff:consume          spscRing  thrpt   16  38.680 ±  8.103  ops/us
+QueueHandoffBenchmarks.handoff:produce          spscRing  thrpt   16  38.680 ±  8.103  ops/us
+
+Benchmark result is saved to results/handoff.json

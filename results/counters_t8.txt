@@ -1,0 +1,209 @@
+# JMH version: 1.37
+# VM version: JDK 21.0.12.1, OpenJDK 64-Bit Server VM, 21.0.12.1+1-LTS
+# VM invoker: C:\Users\anshs\AppData\Local\Temp\claude\C--Users-anshs-Desktop-job-hunt\e849d4a1-1e97-45bf-b567-bcd4958ce355\scratchpad\tools\jdk-21.0.12.1+1\bin\java.exe
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 3 iterations, 1 s each
+# Measurement: 8 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 8 threads, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: io.github.anshsaxena.bench.CounterBenchmarks.atomicLong
+
+# Run progress: 0.00% complete, ETA 00:01:28
+# Fork: 1 of 2
+# Warmup Iteration   1: 23.679 ops/us
+# Warmup Iteration   2: 23.054 ops/us
+# Warmup Iteration   3: 25.879 ops/us
+Iteration   1: 21.612 ops/us
+Iteration   2: 21.287 ops/us
+Iteration   3: 19.679 ops/us
+Iteration   4: 26.375 ops/us
+Iteration   5: 22.929 ops/us
+Iteration   6: 23.310 ops/us
+Iteration   7: 20.078 ops/us
+Iteration   8: 19.561 ops/us
+
+# Run progress: 12.50% complete, ETA 00:01:21
+# Fork: 2 of 2
+# Warmup Iteration   1: 23.375 ops/us
+# Warmup Iteration   2: 25.952 ops/us
+# Warmup Iteration   3: 24.701 ops/us
+Iteration   1: 21.548 ops/us
+Iteration   2: 21.237 ops/us
+Iteration   3: 28.560 ops/us
+Iteration   4: 25.182 ops/us
+Iteration   5: 27.253 ops/us
+Iteration   6: 22.037 ops/us
+Iteration   7: 20.083 ops/us
+Iteration   8: 24.266 ops/us
+
+
+Result "io.github.anshsaxena.bench.CounterBenchmarks.atomicLong":
+  22.812 ±(99.9%) 2.846 ops/us [Average]
+  (min, avg, max) = (19.561, 22.812, 28.560), stdev = 2.795
+  CI (99.9%): [19.966, 25.658] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 21.0.12.1, OpenJDK 64-Bit Server VM, 21.0.12.1+1-LTS
+# VM invoker: C:\Users\anshs\AppData\Local\Temp\claude\C--Users-anshs-Desktop-job-hunt\e849d4a1-1e97-45bf-b567-bcd4958ce355\scratchpad\tools\jdk-21.0.12.1+1\bin\java.exe
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 3 iterations, 1 s each
+# Measurement: 8 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 8 threads, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: io.github.anshsaxena.bench.CounterBenchmarks.longAdder
+
+# Run progress: 25.00% complete, ETA 00:01:10
+# Fork: 1 of 2
+# Warmup Iteration   1: 407.678 ops/us
+# Warmup Iteration   2: 430.402 ops/us
+# Warmup Iteration   3: 455.187 ops/us
+Iteration   1: 449.487 ops/us
+Iteration   2: 438.122 ops/us
+Iteration   3: 442.768 ops/us
+Iteration   4: 429.551 ops/us
+Iteration   5: 491.070 ops/us
+Iteration   6: 411.705 ops/us
+Iteration   7: 423.209 ops/us
+Iteration   8: 453.380 ops/us
+
+# Run progress: 37.50% complete, ETA 00:00:59
+# Fork: 2 of 2
+# Warmup Iteration   1: 439.318 ops/us
+# Warmup Iteration   2: 403.594 ops/us
+# Warmup Iteration   3: 432.348 ops/us
+Iteration   1: 422.774 ops/us
+Iteration   2: 418.142 ops/us
+Iteration   3: 436.046 ops/us
+Iteration   4: 459.855 ops/us
+Iteration   5: 440.108 ops/us
+Iteration   6: 455.133 ops/us
+Iteration   7: 406.217 ops/us
+Iteration   8: 460.592 ops/us
+
+
+Result "io.github.anshsaxena.bench.CounterBenchmarks.longAdder":
+  439.885 ±(99.9%) 22.087 ops/us [Average]
+  (min, avg, max) = (406.217, 439.885, 491.070), stdev = 21.693
+  CI (99.9%): [417.798, 461.972] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 21.0.12.1, OpenJDK 64-Bit Server VM, 21.0.12.1+1-LTS
+# VM invoker: C:\Users\anshs\AppData\Local\Temp\claude\C--Users-anshs-Desktop-job-hunt\e849d4a1-1e97-45bf-b567-bcd4958ce355\scratchpad\tools\jdk-21.0.12.1+1\bin\java.exe
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 3 iterations, 1 s each
+# Measurement: 8 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 8 threads, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: io.github.anshsaxena.bench.CounterBenchmarks.reentrantLock
+
+# Run progress: 50.00% complete, ETA 00:00:47
+# Fork: 1 of 2
+# Warmup Iteration   1: 23.593 ops/us
+# Warmup Iteration   2: 23.793 ops/us
+# Warmup Iteration   3: 27.573 ops/us
+Iteration   1: 32.050 ops/us
+Iteration   2: 33.502 ops/us
+Iteration   3: 32.811 ops/us
+Iteration   4: 32.547 ops/us
+Iteration   5: 30.428 ops/us
+Iteration   6: 24.462 ops/us
+Iteration   7: 22.322 ops/us
+Iteration   8: 23.054 ops/us
+
+# Run progress: 62.50% complete, ETA 00:00:35
+# Fork: 2 of 2
+# Warmup Iteration   1: 25.585 ops/us
+# Warmup Iteration   2: 26.552 ops/us
+# Warmup Iteration   3: 28.750 ops/us
+Iteration   1: 24.081 ops/us
+Iteration   2: 22.272 ops/us
+Iteration   3: 24.323 ops/us
+Iteration   4: 29.616 ops/us
+Iteration   5: 31.063 ops/us
+Iteration   6: 31.434 ops/us
+Iteration   7: 29.896 ops/us
+Iteration   8: 24.934 ops/us
+
+
+Result "io.github.anshsaxena.bench.CounterBenchmarks.reentrantLock":
+  28.050 ±(99.9%) 4.272 ops/us [Average]
+  (min, avg, max) = (22.272, 28.050, 33.502), stdev = 4.195
+  CI (99.9%): [23.778, 32.322] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 21.0.12.1, OpenJDK 64-Bit Server VM, 21.0.12.1+1-LTS
+# VM invoker: C:\Users\anshs\AppData\Local\Temp\claude\C--Users-anshs-Desktop-job-hunt\e849d4a1-1e97-45bf-b567-bcd4958ce355\scratchpad\tools\jdk-21.0.12.1+1\bin\java.exe
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 3 iterations, 1 s each
+# Measurement: 8 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 8 threads, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: io.github.anshsaxena.bench.CounterBenchmarks.synchronizedBlock
+
+# Run progress: 75.00% complete, ETA 00:00:23
+# Fork: 1 of 2
+# Warmup Iteration   1: 10.833 ops/us
+# Warmup Iteration   2: 15.904 ops/us
+# Warmup Iteration   3: 11.263 ops/us
+Iteration   1: 11.526 ops/us
+Iteration   2: 12.171 ops/us
+Iteration   3: 10.209 ops/us
+Iteration   4: 10.931 ops/us
+Iteration   5: 13.027 ops/us
+Iteration   6: 12.306 ops/us
+Iteration   7: 15.304 ops/us
+Iteration   8: 11.957 ops/us
+
+# Run progress: 87.50% complete, ETA 00:00:11
+# Fork: 2 of 2
+# Warmup Iteration   1: 11.433 ops/us
+# Warmup Iteration   2: 13.415 ops/us
+# Warmup Iteration   3: 12.745 ops/us
+Iteration   1: 12.875 ops/us
+Iteration   2: 12.782 ops/us
+Iteration   3: 12.165 ops/us
+Iteration   4: 11.913 ops/us
+Iteration   5: 12.309 ops/us
+Iteration   6: 16.230 ops/us
+Iteration   7: 11.513 ops/us
+Iteration   8: 12.408 ops/us
+
+
+Result "io.github.anshsaxena.bench.CounterBenchmarks.synchronizedBlock":
+  12.477 ±(99.9%) 1.507 ops/us [Average]
+  (min, avg, max) = (10.209, 12.477, 16.230), stdev = 1.480
+  CI (99.9%): [10.970, 13.983] (assumes normal distribution)
+
+
+# Run complete. Total time: 00:01:34
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+NOTE: Current JVM experimentally supports Compiler Blackholes, and they are in use. Please exercise
+extra caution when trusting the results, look into the generated code to check the benchmark still
+works, and factor in a small probability of new VM bugs. Additionally, while comparisons between
+different JVMs are already problematic, the performance difference caused by different Blackhole
+modes can be very significant. Please make sure you use the consistent Blackhole mode for comparisons.
+
+Benchmark                             Mode  Cnt    Score    Error   Units
+CounterBenchmarks.atomicLong         thrpt   16   22.812 ±  2.846  ops/us
+CounterBenchmarks.longAdder          thrpt   16  439.885 ± 22.087  ops/us
+CounterBenchmarks.reentrantLock      thrpt   16   28.050 ±  4.272  ops/us
+CounterBenchmarks.synchronizedBlock  thrpt   16   12.477 ±  1.507  ops/us
+
+Benchmark result is saved to results/counters_t8.json
