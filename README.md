@@ -81,3 +81,9 @@ results/                                         raw JMH output from the run abo
 ## Why these three
 
 They are the first things to check when a Java service has a latency problem: is one shared variable the bottleneck, is a queue between two threads the bottleneck, and is the garbage collector being fed by objects that never needed to exist. Each benchmark is small enough to read in a minute and change.
+
+## Author
+
+Written by **Ansh Saxena**, Backend & ML Infrastructure Engineer (Bengaluru, India). [Website](https://anshsaxena05.github.io/) · [LinkedIn](https://www.linkedin.com/in/ansh-saxena-1c) · [Medium](https://medium.com/@anshs5103) · [GitHub](https://github.com/AnshSaxena05)
+
+Results write-up with the same tables: [anshsaxena05.github.io/projects/jvm-concurrency-benchmarks.html](https://anshsaxena05.github.io/projects/jvm-concurrency-benchmarks.html)
